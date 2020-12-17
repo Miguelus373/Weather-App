@@ -1,0 +1,1 @@
+(()=>{"use strict";var a,e;(async a=>{const e=await fetch(a);await e.json()})((a="caracas",["http://api.openweathermap.org/data/2.5/weather?q=",void 0===(e="venezuela")?a:[a,e].join(","),"&APPID=a0edeea572208c67bc7b570ed1990f65"].join("")))})();
