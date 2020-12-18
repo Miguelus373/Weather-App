@@ -6,5 +6,3 @@ const getWeather = async (url) => {
 };
 
 export { getWeather as default };
-
-// fetch(`${URL}venezuela${KEY}`).then(data => data.json()).then(weather => console.log(weather));
