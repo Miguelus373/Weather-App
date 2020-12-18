@@ -13,6 +13,20 @@ body {
   padding: 0 1rem 1rem;
 }
 
+.loading {
+  position: relative;
+  left: 50%;
+  width: 24rem;
+  height: auto;
+  margin: 0 0 -5rem -12rem;
+  z-index: -1;
+}
+
+.error {
+  margin-top: 4rem;
+  text-align: center;
+}
+
 .country {
   color: #a1adce;
   font-size: 80%;

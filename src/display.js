@@ -1,6 +1,12 @@
 import toggleUnit from './toggle_unit';
 
 const displayWeather = async (weatherData) => {
+  const weatherBox = document.querySelector('.weather-box');
+  weatherBox.innerHTML = `
+  <img class="loading" 
+  src="https://motiongraphicsphoebe.files.wordpress.com/2018/10/8ee212dac057d412972e0c8cc164deee.gif?w=545&h=409" />
+  `;
+
   const data = await weatherData;
   if (data && data.cod < 400) {
     const {
@@ -12,7 +18,7 @@ const displayWeather = async (weatherData) => {
       wind: { speed },
     } = data;
 
-    document.querySelector('.weather-box').innerHTML = `
+    weatherBox.innerHTML = `
     <h1>${city}, <span class="country">${country}</span></h1>
     <div class="weather-header">
     <img src="http://openweathermap.org/img/wn/${icon}@2x.png"/>
@@ -28,6 +34,10 @@ const displayWeather = async (weatherData) => {
         </div>
         `;
     toggleUnit();
+  } else {
+    weatherBox.innerHTML = `
+    <h4 class="error">Couldn't get the weather for that location. Please try again later.</h4>
+    `;
   }
 };
 
