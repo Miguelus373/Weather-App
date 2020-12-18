@@ -26,6 +26,15 @@ body {
   border-radius: 10px;
 }
 
+.toggle {
+  margin-top: -1.4rem;
+}
+
+#toggle {
+  text-decoration: none;
+  color: #fff;
+}
+
 .temp {
   font-size: 3rem;
   font-weight: 700;
@@ -43,7 +52,6 @@ body {
   padding-top: 0.6rem;
   width: 50%;
   margin: 0;
-  /* font-size: 1rem; */
   border-top: solid 1px #fff;
   border-right: solid 1px #fff;
   font-weight: 500;
@@ -80,4 +88,9 @@ input {
 #search:hover {
   cursor: pointer;
   box-shadow: 0 0 8px slategray;
+}
+
+#toggle:hover,
+#current:hover {
+  text-decoration: underline;
 }
