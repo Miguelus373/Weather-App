@@ -6,17 +6,23 @@
     <title>Weather App</title>
   </head>
   <body>
-    <input type="text" name="city" placeholder="City Name" />
-    <input
-      type="text"
-      name="country"
-      maxlength="2"
-      placeholder="Country Code"
-    />
-    <button type="button" id="search">Check Weather</button>
-
     <div class="weather-box"></div>
-    
+
+    <div class="search-bar">
+      <h4>Select Location:</h4>
+      <div>
+        <input type="text" name="city" placeholder="City Name"/>
+      <input
+        type="text"
+        name="country"
+        maxlength="2"
+        placeholder="Country Code"
+        />
+        <button type="button" id="search">Check Weather</button>
+      </div>
+        <a href="#" id="current">Use your current Location</a>
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>
