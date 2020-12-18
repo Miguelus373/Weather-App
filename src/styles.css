@@ -10,7 +10,7 @@ body {
 .weather-box {
   width: 90%;
   margin: 0 auto;
-  padding: 0rem 1rem 1rem;
+  padding: 0 1rem 1rem;
 }
 
 .country {
