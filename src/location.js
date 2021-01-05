@@ -1,5 +1,5 @@
 const locationUrl = (type, field1, field2) => {
-  const BASE = 'http://api.openweathermap.org/data/2.5/weather?units=metric&';
+  const BASE = 'https://api.openweathermap.org/data/2.5/weather?units=metric&';
   const KEY = '&APPID=a0edeea572208c67bc7b570ed1990f65';
   let params;
 
