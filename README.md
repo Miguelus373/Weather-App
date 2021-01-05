@@ -13,6 +13,10 @@
 - CSS
 - VS Code
 
+## Live Demo
+
+> Check this app on this [Live demo link](https://miguelus373.github.io/Weather-App/)
+
 ## How to Install
 
 - Install Node in your system. To install Node, you can read the [Documentation](https://nodejs.org/en/download/package-manager/)
